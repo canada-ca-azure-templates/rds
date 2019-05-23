@@ -124,6 +124,6 @@ The following security controls can be met through configuration of this templat
 
 ## History
 
-| Date     | Change                                          |
-| -------- | ----------------------------------------------- |
-| 20190502 | Update documentation                            |
+| Date     | Release                                                                    | Change                       |
+| -------- | -------------------------------------------------------------------------- | ---------------------------- |
+| 20190502 | [20190502](https://github.com/canada-ca-azure-templates/rds/tree/20190502) | Move to new github structure |
