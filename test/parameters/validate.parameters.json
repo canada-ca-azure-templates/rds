@@ -1,0 +1,66 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "keyVaultResourceGroupName": {
+            "value": "PwS2-validate-rds-RG"
+        },
+        "keyVaultName": {
+            "value": "PwS2-validate-[unique]"
+        },
+        "adminUsername": {
+            "value": "azureadmin"
+        },
+        "adminPasswordSecret": {
+            "value": "server2016DefaultPassword"
+        },
+        "adDomainName": {
+            "value": "validate.gc.ca.local"
+        },
+        "dnsServerPrivateIp": {
+            "value": [
+                "10.250.1.8",
+                "10.250.1.9"
+            ]
+        },
+        "rdsVnetRG": {
+            "value": "PwS2-validate-rds-RG"
+        },
+        "rdsVnetName": {
+            "value": "PwS2-validate-rds-VNET"
+        },
+        "rdsPAZSubnetName": {
+            "value": "PAZ"
+        },
+        "rdsAPPSubnetName": {
+            "value": "APP"
+        },
+        "rdsGatewayName": {
+            "value": "VALRDSGW"
+        },
+        "rdsBrokerName": {
+            "value": "VALRDSCBRK"
+        },
+        "rdsSessionHostNamePrefix": {
+            "value": "VALRDSSH"
+        },
+        "numberOfRdshInstances": {
+            "value": 2
+        },
+        "imageSKU": {
+            "value": "2016-Datacenter"
+        },
+        "rdshVmSize": {
+            "value": "Standard_A4_v2"
+        },
+        "tagValues": {
+            "value": {
+                "Owner": "build.pipeline@tpsgc-pwgsc.gc.ca",
+                "CostCenter": "PSPC-EA",
+                "Enviroment": "Validate",
+                "Classification": "Unclassified",
+                "Organizations": "PSPC-CCC-E&O"
+            }
+        }
+    }
+}
