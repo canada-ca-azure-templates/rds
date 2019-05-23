@@ -79,7 +79,7 @@ if ($provisionningState -eq "Failed") {
     exit
 }
 
-Write-Host "Starting $templateLibraryName active-directory dependancies deployment...";
+Write-Host "Starting $templateLibraryName active-directory dependancy deployment...";
 
 New-AzureRmDeployment -Location $Location -Name "Deploy-$templateLibraryName-Template-Active-Directory-Dependancy" -TemplateUri "https://raw.githubusercontent.com/canada-ca-azure-templates/masterdeploy/20190514/template/masterdeployrg.json" -TemplateParameterFile (Resolve-Path -Path "$PSScriptRoot\parameters\masterdeploy-active-directory.parameters.json") -baseParametersURL $baseParametersURL -Verbose;
 
