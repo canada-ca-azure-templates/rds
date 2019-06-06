@@ -5,7 +5,7 @@
         "deploymentRGArray": {
             "value": [
                 {
-                    "name": "active-directory",
+                    "name": "active-directory-rds",
                     "resourceGroup": "PwS2-validate-rds-RG",
                     "templateLink": "https://raw.githubusercontent.com/canada-ca-azure-templates/active-directory/20190516/template/azuredeploy.json",
                     "parametersFile": "dependancy-active-directory.parameters.json"
